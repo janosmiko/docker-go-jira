@@ -14,4 +14,6 @@ RUN apk add --no-cache \
 
 COPY --from=build /go/bin/jira /usr/bin
 
+WORKDIR /root
+
 CMD [ "jira" ]
