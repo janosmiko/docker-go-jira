@@ -12,6 +12,7 @@ RUN apk add --no-cache \
         && pip3 install \
             awscli \
         && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd \
+        && ln -sf /bin/bash /bin/sh \
         && rm -rf /var/cache/apk/* \
         && echo "" > /root/.ash_history
 
