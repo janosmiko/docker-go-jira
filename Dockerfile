@@ -7,6 +7,7 @@ RUN apk add --no-cache \
             py3-pip \
             jq \
             ca-certificates \
+            parallel \
         && pip3 install --upgrade pip \
         && pip3 install \
             awscli \
